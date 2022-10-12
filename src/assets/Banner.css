@@ -1,0 +1,33 @@
+
+.banner {
+	background: url('https://images.moneycontrol.com/static-mcnews/2021/05/Bitcoin-Pizza-Day-2021.jpg?impolicy=website&width=1600&height=900');
+	text-align: center;
+	width: 100%;
+	height: 35vh;
+	background-size: cover;
+	background-attachment: fixed;
+	position: relative;
+	overflow: hidden;
+	
+}
+
+.overlay {
+	width: 100%;
+	height: 100%;
+	padding: 50px;
+	color: rgb(24, 22, 22);
+	background-image: linear-gradient(135deg, #11131069 50%, #147a0b6b 100%);
+
+}
+
+h1 {
+	color: white;
+    border-bottom: 1px solid white;
+    padding-bottom: 1rem;
+}
+
+h4 {
+	color: white;
+	
+}
+
