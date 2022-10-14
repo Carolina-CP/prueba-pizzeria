@@ -10,11 +10,9 @@ const CartaMenu = () => {
 
     const navigate = useNavigate();
 
-    const { pizzas } = useContext(ContextAPI);
+    const { pizzas} = useContext(ContextAPI);
 
-   // const formatoPrecio = (price) => {
-   //     return (price.toLocalString('es-CL'))
-   // }
+   
 
     return (
         <div className="container my-4">
@@ -40,8 +38,8 @@ const CartaMenu = () => {
                             <h4 className="text-danger"> ${pizza.price}</h4>
                            
                                 <button className="btn btn-success m-2" onClick={() => navigate(`/pizza/${pizza.id}`)}>Ver Más 👀</button>
-                                <button className="btn btn-danger m-2" onClick={() => console.log('aquí va el carrito de compras')}>Añadir 🛒</button>
-                           
+                                <button className="btn btn-danger m-2" onClick={() => console.log(pizza.id)}>Añadir 🛒</button>
+                              
                         </Card.Body>
                     </Card>
                 ))
