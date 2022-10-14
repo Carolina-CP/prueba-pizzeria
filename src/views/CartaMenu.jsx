@@ -1,20 +1,20 @@
-import "../assets/CartaMenu.css";
-import ContextAPI from "../ContextAPI ";
-import { useContext } from 'react';
-import { useNavigate } from "react-router-dom";
-import { Card, Button } from "react-bootstrap";
-import Detalles from './Detalles';
+import "../assets/CartaMenu.css"; //importación css desde assets
+import ContextAPI from "../ContextAPI "; //importación de datos de API
+import {useContext } from 'react'; //importacion de hooks
+import { useNavigate } from "react-router-dom"; //importación de useNavigate para redireccion a detalles
+import { Card } from "react-bootstrap"; // importación de componentes de bootstrap
+//import Detalles from './Detalles';
 
 
 const CartaMenu = () => {
 
     const navigate = useNavigate();
 
-    const { pizzas, setPizzas } = useContext(ContextAPI);
+    const { pizzas } = useContext(ContextAPI);
 
-    const formatoPrecio = (price) => {
-        return (price.toLocalString('es-CL'))
-    }
+   // const formatoPrecio = (price) => {
+   //     return (price.toLocalString('es-CL'))
+   // }
 
     return (
         <div className="container my-4">
